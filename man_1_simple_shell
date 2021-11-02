@@ -1,0 +1,32 @@
+.TH SIMPLE_SHELL "manual page october 25,  2012"
+
+
+.SH NAME
+.B lsh
+-SIMPLE_SHELL - project
+.pp
+
+.SH SYNOPSIS
+.B ./lsh
+.PP
+
+
+.SH Description
+simple_shell is command language interpreter capable of executing command read from standard input this is a capable of having command lined in from the background
+
+.SH overview
+the shell is a program that read linefrom either a file or the terminal, interapraters thier, and execute other command.
+to run the shell you should compile all the .c files in the repository with GUN compiler collection & execute the output file, as follow
+.P
+.RS
+.B gcc -wall -werror -wextera -pendautic .c -o hsh
+.B ./hsh
+.P
+.RE
+simple shell would be run  on interactive mode by executing the hsh, prompt will appear waiting for you to type a command followed by an enter
+
+the mon interactive mode uses shell scripte. this includes the use of piping ('|')
+example
+.P
+.RS
+.B echo 'ls -la' | ./hsh
